@@ -6,6 +6,16 @@ class rules():
         result = (file[0], file[1].replace(character, ''))
         return result
 
+    # [5]
+    def addBehind(self, character, file):
+        result = (file[0], file[1]+character)
+        return result
+
+    # [6]
+    def addAhead(self, character, file):
+        result = (file[0], character+file[1])
+        return result
+
 
 rules = rules()
 
